@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Curriculum Vitae</string>
+    <string name="empty_fields">Please fill all the fields!</string>
+    <string name="check_email">Check your email!</string>
+    <string name="excellent_skills">Vous avez d\'excellents skills!</string>
+    <string name="excellent_skill">Vous êtes excellent en %1$s!</string>
+    <string name="below_average_skills">Vous devez travailler vos skills!</string>
+    <string name="good_skills">Vous avez de bons skills!</string>
+</resources>
