@@ -1,80 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!-- PICTURE -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/person"
+        android:tint="@color/colorPrimary"/>
 
-    <!--GENERAL INFO LAYOUT-->
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <!-- NAME LAYOUT -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyt_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_pic"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/person"
-            android:tint="@color/colorSecondary"/>
-        <androidx.appcompat.widget.LinearLayoutCompat
+        app:boxStrokeErrorColor="@color/red"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:startIconDrawable="@drawable/ic_person_resized"
+        app:startIconTint="@color/colorPrimary">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="FullName"/>
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:hint="Age"
-                android:inputType="number" />
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:hint="Email"
-                android:inputType="textEmailAddress"/>
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-    <!--****************************************-->
-
-    <View
+            android:layout_marginStart="5dp"
+            android:hint="@string/fullname"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- EMAIL LAYOUT -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyt_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/colorPrimary"/>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        app:boxStrokeErrorColor="@color/red"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/colorPrimary">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- AGE LAYOUT -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyt_age"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        app:boxStrokeErrorColor="@color/red"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:startIconDrawable="@drawable/ic_calendar"
+        app:startIconTint="@color/colorPrimary">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--GENDER LAYOUT-->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/background_border"
         android:orientation="vertical">
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:text="@string/gender"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
         <RadioGroup
             android:id="@+id/rg_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:layout_gravity="center">
             <RadioButton
@@ -84,122 +137,34 @@
                 android:checked="true"
                 android:layout_marginEnd="7dp"
                 android:layout_weight="1"
-                android:text="Homme"
-                android:textSize="18dp"/>
+                android:text="@string/homme"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
             <RadioButton
                 android:id="@+id/rb_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
                 android:layout_weight="1"
-                android:text="Femme"
-                android:textSize="18dp"/>
+                android:text="@string/femme"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
 
         </RadioGroup>
     </androidx.appcompat.widget.LinearLayoutCompat>
-    <!--****************************************-->
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/colorPrimary"/>
 
-    <!--SKILLS LAYOUT-->
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_skills"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Skills"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/sb_android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:layout_marginTop="7dp"/>
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="3dp"
-            android:layout_gravity="end"
-            android:text="ANDROID"
-            android:textSize="18dp"/>
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/sb_ios"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:layout_marginTop="7dp"/>
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_ios"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="3dp"
-            android:layout_gravity="end"
-            android:text="iOS"
-            android:textSize="18dp"/>
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/sb_flutter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:layout_marginTop="7dp"/>
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_flutter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="3dp"
-            android:layout_gravity="end"
-            android:text="Flutter"
-            android:textSize="18dp"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
-    <!--****************************************-->
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/colorPrimary"/>
-
-    <!--BTNS LAYOUT-->
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_reset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:layout_margin="5dp"
-            android:text="Reset"
-            android:textColor="@color/white"
-            android:background="@drawable/rounded_bg"/>
+    <!-- "NEXT" BTN -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_gravity="bottom"
             android:layout_margin="5dp"
-            android:text="Next"
+            android:text="@string/next"
             android:textColor="@color/white"
+            android:textSize="18sp"
             android:background="@drawable/rounded_bg"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

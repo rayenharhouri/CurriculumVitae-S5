@@ -7,8 +7,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#212121</color>
+    <!-- colors v1-->
+    <!--color name="colorPrimary">#212121</color>
     <color name="colorPrimaryVariant">#000000</color>
     <color name="colorSecondary">#ff1744</color>
-    <color name="colorSecondaryVariant">#c4001d</color>
+    <color name="colorSecondaryVariant">#c4001d</color-->
+
+    <!-- colors v2-->
+    <color name="colorPrimary">#49B692</color>
+    <color name="colorPrimaryDark">#008564</color>
+    <color name="colorPrimaryLight">#7ee9c2</color>
+
+    <color name="colorSecondary">#9cd7c5</color>
+    <color name="colorSecondaryDark">#6ca595</color>
+    <color name="colorSecondaryLight">#cefff8</color>
+
+    <color name="red">#c4001d</color>
 </resources>
