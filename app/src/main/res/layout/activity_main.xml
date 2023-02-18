@@ -12,11 +12,11 @@
     <!-- PICTURE -->
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_pic"
+        android:layout_marginTop="10dp"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/person"
-        android:tint="@color/colorPrimary"/>
+        android:src="@drawable/ic_account"/>
 
     <!-- NAME LAYOUT -->
     <com.google.android.material.textfield.TextInputLayout
@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toStartOf="@+id/v2"
         app:layout_constraintStart_toStartOf="@+id/v1"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:startIconDrawable="@drawable/ic_person_resized"
+        app:startIconDrawable="@drawable/ic_account"
         app:startIconTint="@color/colorPrimary">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_name"

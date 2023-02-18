@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background_border"
+    android:orientation="vertical"
+    tools:context=".HobbiesFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbies"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/music"
+            android:enabled="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <CheckBox
+            android:id="@+id/cb_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sport"
+            android:enabled="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <CheckBox
+            android:id="@+id/cb_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/games"
+            android:enabled="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -28,7 +28,7 @@ class SkillsActivity : AppCompatActivity() {
         //ON CLICK SUBMIT
         submitBtn.setOnClickListener{
             saveData()
-            var  intent= Intent(this, ResumeActivity::class.java)
+            var  intent= Intent(this, ResumeActivityV2::class.java)
             startActivity(intent)
         }
 
