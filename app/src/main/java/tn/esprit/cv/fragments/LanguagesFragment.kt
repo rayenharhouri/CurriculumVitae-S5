@@ -1,16 +1,19 @@
-package tn.esprit.cv
+package tn.esprit.cv.fragments
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
 import androidx.fragment.app.Fragment
+import tn.esprit.cv.R
 
 class LanguagesFragment : Fragment(R.layout.fragment_languages) {
     private lateinit var arCb : CheckBox; private lateinit var frCb : CheckBox; private lateinit var enCb : CheckBox
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        arCb=view.findViewById(R.id.cb_ar); frCb=view.findViewById(R.id.cb_fr); enCb=view.findViewById(R.id.cb_en)
+        arCb=view.findViewById(R.id.cb_ar); frCb=view.findViewById(R.id.cb_fr); enCb=view.findViewById(
+            R.id.cb_en
+        )
         setLanguages()
     }
 

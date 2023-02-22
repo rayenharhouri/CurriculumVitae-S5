@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".SummaryFragment">
+    tools:context=".fragments.SummaryFragment">
 
     <TextView
         android:id="@+id/tv_name"

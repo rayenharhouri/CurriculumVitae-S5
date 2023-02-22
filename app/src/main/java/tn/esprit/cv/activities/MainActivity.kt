@@ -1,4 +1,4 @@
-package tn.esprit.cv
+package tn.esprit.cv.activities
 
 import android.app.Activity
 import android.content.ContentValues
@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import tn.esprit.cv.R
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -35,13 +36,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val actionBar = supportActionBar
-        actionBar!!.title = getString(R.string.create_resume_title)
+        //actionBar!!.title = getString(R.string.create_resume_title)
 
         //INIT UI ELEMENTS
         picIv=findViewById(R.id.iv_pic)
         nameEt=findViewById(R.id.et_name); ageEt=findViewById(R.id.et_age); emailEt=findViewById(R.id.et_email)
-        nameLyt=findViewById(R.id.lyt_name); ageLyt=findViewById(R.id.lyt_age); emailLyt=findViewById(R.id.lyt_email)
-        genderRg=findViewById(R.id.rg_gender); maleRb=findViewById(R.id.rb_male); femaleRb=findViewById(R.id.rb_female)
+        nameLyt=findViewById(R.id.lyt_name); ageLyt=findViewById(R.id.lyt_age); emailLyt=findViewById(
+            R.id.lyt_email
+        )
+        genderRg=findViewById(R.id.rg_gender); maleRb=findViewById(R.id.rb_male); femaleRb=findViewById(
+            R.id.rb_female
+        )
         nextBtn=findViewById(R.id.btn_next)
 
         selectProfilePic()
@@ -166,7 +171,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun validateInput(): Boolean {
         //Vérifier si les champs des 3 EditText ne sont pas vides
-        if(setError(nameEt,getString(R.string.must_not_be_empty)) || setError(emailEt,getString(R.string.must_not_be_empty)) || setError(ageEt,getString(R.string.must_not_be_empty))){
+        if(setError(nameEt,getString(R.string.must_not_be_empty)) || setError(emailEt,getString(R.string.must_not_be_empty)) || setError(ageEt,getString(
+                R.string.must_not_be_empty
+            ))){
             return false
         }else{
             //vérifier si l'adresse email est valide

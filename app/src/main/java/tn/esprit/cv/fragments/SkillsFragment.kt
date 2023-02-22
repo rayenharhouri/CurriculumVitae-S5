@@ -1,13 +1,13 @@
-package tn.esprit.cv
+package tn.esprit.cv.fragments
 
 import android.content.Context
 import android.graphics.Color
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
-import android.view.View.OnTouchListener
 import android.widget.SeekBar
 import androidx.fragment.app.Fragment
+import tn.esprit.cv.R
 
 
 class SkillsFragment : Fragment(R.layout.fragment_skills) {
@@ -15,7 +15,9 @@ class SkillsFragment : Fragment(R.layout.fragment_skills) {
     lateinit var androidSb:SeekBar; lateinit var iosSb:SeekBar; lateinit var flutterSb:SeekBar;
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        androidSb=view.findViewById(R.id.sb_android); iosSb=view.findViewById(R.id.sb_ios); flutterSb=view.findViewById(R.id.sb_flutter)
+        androidSb=view.findViewById(R.id.sb_android); iosSb=view.findViewById(R.id.sb_ios); flutterSb=view.findViewById(
+            R.id.sb_flutter
+        )
         disableSeekbars()
         setProgress()
     }

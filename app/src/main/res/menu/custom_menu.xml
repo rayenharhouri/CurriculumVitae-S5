@@ -3,6 +3,6 @@
     <item
         android:id="@+id/info_item"
         android:icon="@drawable/ic_info"
-        android:title="About us"
+        android:title="About me"
         app:showAsAction="always"/>
 </menu>

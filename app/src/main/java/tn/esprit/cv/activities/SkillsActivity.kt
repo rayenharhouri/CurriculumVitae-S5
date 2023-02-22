@@ -1,4 +1,4 @@
-package tn.esprit.cv
+package tn.esprit.cv.activities
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
+import tn.esprit.cv.R
 
 class SkillsActivity : AppCompatActivity() {
     private lateinit var androidSb : SeekBar; private lateinit var iosSb : SeekBar; private lateinit var flutterSb : SeekBar
@@ -17,13 +18,17 @@ class SkillsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skills)
-        androidSb=findViewById(R.id.sb_android); iosSb=findViewById(R.id.sb_ios); flutterSb=findViewById(R.id.sb_flutter)
+        androidSb=findViewById(R.id.sb_android); iosSb=findViewById(R.id.sb_ios); flutterSb=findViewById(
+            R.id.sb_flutter
+        )
         arCb=findViewById(R.id.cb_ar); frCb=findViewById(R.id.cb_fr); enCb=findViewById(R.id.cb_en)
-        musicCb=findViewById(R.id.cb_music); sportCb=findViewById(R.id.cb_sport); gamesCb=findViewById(R.id.cb_games)
+        musicCb=findViewById(R.id.cb_music); sportCb=findViewById(R.id.cb_sport); gamesCb=findViewById(
+            R.id.cb_games
+        )
         submitBtn=findViewById(R.id.btn_submit)
 
         val actionBar = supportActionBar
-        actionBar!!.title = getString(R.string.create_resume_title)
+        //actionBar!!.title = getString(R.string.create_resume_title)
 
         //ON CLICK SUBMIT
         submitBtn.setOnClickListener{

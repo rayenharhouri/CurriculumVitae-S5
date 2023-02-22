@@ -7,21 +7,30 @@
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable-v23/splash_bg.xml" value="0.162" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/app_icon_resized.xml" value="0.1" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/background_border.xml" value="0.1975" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/bottom_to_top.xml" value="0.1945" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/drawable_resize.xml" value="0.1975" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/gradiant_splash.xml" value="0.162" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/ic_person_resized.xml" value="0.121" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/rounded_bg.xml" value="0.134" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/splash_bg.xml" value="0.1" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/test.xml" value="0.161" />
-        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/drawable/top_to_bottom.xml" value="0.1945" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/activity_career.xml" value="0.25" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/activity_main.xml" value="0.17894736842105263" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/activity_resume.xml" value="0.264" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/activity_resume_v2.xml" value="0.2" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/activity_skills.xml" value="0.234375" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/education_item.xml" value="0.1" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/experience_item.xml" value="0.1827956989247312" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/fragment_education.xml" value="0.264" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/fragment_experience.xml" value="0.2" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/fragment_hobbies.xml" value="0.2" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/fragment_languages.xml" value="0.234375" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/fragment_skills.xml" value="0.234375" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/fragment_summary.xml" value="0.2" />
-        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/menu/custom_menu.xml" value="0.10885416666666667" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/layout/left_icon_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/menu/custom_menu.xml" value="0.16" />
+        <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/menu/custom_menu_career.xml" value="0.25" />
         <entry key="..\:/Users/Bugs Bunny/AndroidStudioProjects/Kotlin/CurriculumVitae/app/src/main/res/menu/menu_main.xml" value="0.2" />
       </map>
     </option>

@@ -8,7 +8,7 @@
     android:padding="10dp"
     android:orientation="vertical"
     android:background="@drawable/background_border"
-    tools:context=".ResumeActivity">
+    tools:context=".activities.ResumeActivity_old">
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ResumeActivityV2">
+    tools:context=".activities.ResumeActivityV2">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_pic"
             android:layout_marginTop="10dp"
@@ -85,4 +93,16 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp"/>
         </FrameLayout>
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_career"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_gravity="bottom"
+        android:text="@string/career"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_bg"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

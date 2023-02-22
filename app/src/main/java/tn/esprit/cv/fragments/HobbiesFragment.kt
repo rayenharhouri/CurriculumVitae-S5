@@ -1,16 +1,19 @@
-package tn.esprit.cv
+package tn.esprit.cv.fragments
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
 import androidx.fragment.app.Fragment
+import tn.esprit.cv.R
 
 class HobbiesFragment : Fragment(R.layout.fragment_hobbies) {
     private lateinit var musicCb : CheckBox; private lateinit var sportCb : CheckBox; private lateinit var gamesCb : CheckBox
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        musicCb=view.findViewById(R.id.cb_music); sportCb=view.findViewById(R.id.cb_sport); gamesCb=view.findViewById(R.id.cb_games)
+        musicCb=view.findViewById(R.id.cb_music); sportCb=view.findViewById(R.id.cb_sport); gamesCb=view.findViewById(
+            R.id.cb_games
+        )
         setHobbies()
     }
 

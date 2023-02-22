@@ -29,10 +29,13 @@
     <string name="sport">Sport</string>
     <string name="games">Games</string>
     <string name="submit">Submit</string>
+    <string name="career">My career</string>
     <string name="create_resume_title">Create your Resume</string>
     <string name="your_resume_title">Your Resume</string>
     <string name="my_name">Hello! My name is %1$s</string>
     <string name="my_age">I have %1$s years old</string>
     <string name="my_gender">and I am a %1$s</string>
     <string name="my_email">You can contact me via my email:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
