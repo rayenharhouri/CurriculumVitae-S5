@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import tn.esprit.cv.R
 
+
 class SummaryFragment : Fragment(R.layout.fragment_summary) {
 
     private lateinit var nameTv : TextView; private lateinit var emailTv : TextView; private lateinit var ageTv : TextView; private lateinit var genderTv : TextView

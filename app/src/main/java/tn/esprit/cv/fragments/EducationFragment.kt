@@ -9,6 +9,7 @@ import tn.esprit.cv.R
 import tn.esprit.cv.adapters.RecyclerViewAdapter
 import tn.esprit.cv.data.Data
 
+
 class EducationFragment : Fragment(R.layout.fragment_education) {
     private lateinit var educationRv: RecyclerView
 

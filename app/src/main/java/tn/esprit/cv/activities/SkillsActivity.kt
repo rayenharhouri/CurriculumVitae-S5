@@ -9,6 +9,7 @@ import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import tn.esprit.cv.R
 
+
 class SkillsActivity : AppCompatActivity() {
     private lateinit var androidSb : SeekBar; private lateinit var iosSb : SeekBar; private lateinit var flutterSb : SeekBar
     private lateinit var arCb : CheckBox; private lateinit var frCb : CheckBox; private lateinit var enCb : CheckBox

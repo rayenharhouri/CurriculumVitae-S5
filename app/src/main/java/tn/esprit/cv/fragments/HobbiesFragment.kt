@@ -7,6 +7,7 @@ import android.widget.CheckBox
 import androidx.fragment.app.Fragment
 import tn.esprit.cv.R
 
+
 class HobbiesFragment : Fragment(R.layout.fragment_hobbies) {
     private lateinit var musicCb : CheckBox; private lateinit var sportCb : CheckBox; private lateinit var gamesCb : CheckBox
 

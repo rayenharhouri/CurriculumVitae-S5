@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import tn.esprit.cv.R
 
 
+
 class SkillsFragment : Fragment(R.layout.fragment_skills) {
 
     lateinit var androidSb:SeekBar; lateinit var iosSb:SeekBar; lateinit var flutterSb:SeekBar;

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import tn.esprit.cv.R
 
+
 class ResumeActivity_old : AppCompatActivity() {
     private lateinit var nameTv : TextView; private lateinit var emailTv : TextView; private lateinit var ageTv : TextView ; private lateinit var genderTv : TextView
     private lateinit var androidTv : TextView; private lateinit var iosTv : TextView; private lateinit var flutterTv : TextView ;
