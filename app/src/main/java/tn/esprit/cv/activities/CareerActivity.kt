@@ -11,6 +11,7 @@ import tn.esprit.cv.R
 import tn.esprit.cv.fragments.EducationFragment
 import tn.esprit.cv.fragments.ExperienceFragment
 
+
 class CareerActivity : AppCompatActivity() {
     lateinit var btnExperience:Button;lateinit var btnEducation:Button;
     override fun onCreate(savedInstanceState: Bundle?) {

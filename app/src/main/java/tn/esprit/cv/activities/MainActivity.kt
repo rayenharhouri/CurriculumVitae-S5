@@ -24,6 +24,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var picIv : ImageView
     private lateinit var nameEt : TextInputEditText; private lateinit var ageEt : TextInputEditText; private lateinit var emailEt : TextInputEditText

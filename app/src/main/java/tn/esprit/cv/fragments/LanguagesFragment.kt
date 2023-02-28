@@ -7,6 +7,7 @@ import android.widget.CheckBox
 import androidx.fragment.app.Fragment
 import tn.esprit.cv.R
 
+
 class LanguagesFragment : Fragment(R.layout.fragment_languages) {
     private lateinit var arCb : CheckBox; private lateinit var frCb : CheckBox; private lateinit var enCb : CheckBox
 

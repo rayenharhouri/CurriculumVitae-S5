@@ -20,6 +20,7 @@ import tn.esprit.cv.fragments.LanguagesFragment
 import tn.esprit.cv.fragments.SkillsFragment
 import tn.esprit.cv.fragments.SummaryFragment
 
+
 class ResumeActivityV2 : AppCompatActivity() {
     private lateinit var picIv : ImageView
     private lateinit var nameTv : TextView; private lateinit var emailTv : TextView

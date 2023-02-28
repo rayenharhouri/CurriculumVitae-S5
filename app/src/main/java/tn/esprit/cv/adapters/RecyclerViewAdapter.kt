@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import tn.esprit.cv.R
 import tn.esprit.cv.data.Data
 
+
 class RecyclerViewAdapter (private val list: List<Data>,private val layoutResourceId: Int) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
     lateinit var context: Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

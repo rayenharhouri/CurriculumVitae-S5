@@ -9,6 +9,7 @@ import tn.esprit.cv.R
 import tn.esprit.cv.adapters.RecyclerViewAdapter
 import tn.esprit.cv.data.Data
 
+
 class ExperienceFragment : Fragment(R.layout.fragment_experience) {
 
     private lateinit var experienceRv: RecyclerView
